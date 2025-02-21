@@ -1,0 +1,18 @@
+{{define "home"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Kpop</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <h2>Artist</h2>
+    {{range .Data.Artists}}
+    <p>{{.}}</p>
+    {{end}}
+</body>
+</html>
+{{end}}
